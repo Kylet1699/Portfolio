@@ -21,17 +21,23 @@
         <script src="static/js/main.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="#about">Main.</a></li>
-                        <li><a href="#project">Projects.</a></li>
-                    </ul>
+
+        <header class="slideInTop">
+            <nav class="navbar navbar-expand-lg navbar-dark grey bg-color">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon grey"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="index.html">Main</a>
+                      <a class="nav-link" href="#projects">Projects</a>
+                    </div>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </header>
-        
+
         <main class="content-wrap">
             <div class="hero dm-mono">
                 <h1 class="display-6">Hi, my name is</h1>
@@ -40,11 +46,11 @@
                 </div>
                 <h3>I'm a 4th year computing science student specialized in full stack development</h3> 
             </div>
-            <div class="projects mb-10">
+            <div class="projects mb-10" id="projects">
                 <div class="container-fluid">
                     <div class="row gy-4">
                         <div class="col-xs-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                            <div class="card project-card flex-grow-1">
+                            <div class="card project-card flex-grow-1"">
                                 <div class="card-header">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-filetype-py file-icon" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
@@ -57,6 +63,7 @@
                                     <p class="card-text dm-mono">
                                         A Django project by a team of six to provide a simplified and more efficient movie searching process for any users.
                                     </p>
+                                    <a href="fresh-potato.html" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
