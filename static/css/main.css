@@ -6,6 +6,10 @@ body {
     margin-top: 0;
 }
 
+#particles-js {
+    background: black;
+}
+
 h1, h2, h3, h4, h5, p {
     color: #ABB2BF;
 }
@@ -58,20 +62,32 @@ p {
     color: #dd7729;
 }
 
+.blue {
+    color: #519ABA;
+    font-weight: bold;
+}
+
+.green {
+    color: #98C364;
+    text-decoration: none;
+}
+
+.green:hover {
+    color: #E5C059;
+    text-decoration: underline;
+}
+
 .strong {
     font-weight: bold;
     color: #abb2bf;
 }
 
-/* scroll-margin */
-/* https://stackoverflow.com/questions/38069213/add-padding-top-to-scroll-when-using-href-id */
---h-header: 3rem;
-
-.anchor {
-    scroll-margin-top: calc(var(--h-header) + 2.5rem);
+.highlight {
+    color: #abb2bf;
 }
 
-
+/* scroll-margin */
+/* https://stackoverflow.com/questions/38069213/add-padding-top-to-scroll-when-using-href-id */
 @keyframes slideInFromTop {
     0% {
         opacity: 0;
@@ -207,6 +223,10 @@ header {
 div[class^="col-"] {
     transition: width 0.3s, height 0.3s;
   }
+
+.section-title * {
+    font-size: 1.5rem;
+}
 
 .project-card {
     background-color: #181A1F;
@@ -389,6 +409,20 @@ hr {
     margin: 0.5rem 0 1rem;
 }
 
+.hr-full {
+    width: 100%;
+    margin: 1rem 0 1rem;
+}
+
 .section {
     margin-top: 2rem;
+}
+
+#particles-js {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.5s;
 }
