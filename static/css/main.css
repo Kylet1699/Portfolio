@@ -24,14 +24,30 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+h3 {
+    font-size: 1.2rem;
+    color: #cacaca;
+    font-family: 'DM Mono', monospace;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #cacaca;
+    font-family: 'DM Mono', monospace;
+}
+
 h5 {
     color: #cacaca;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'DM Mono', monospace;
 }
 
 p {
     color: #8a8a8a;
     font-family: 'DM Mono', monospace;
+}
+
+.sub-title {
+    font-size: 1.5rem;
 }
 
 .grey * {
@@ -58,6 +74,8 @@ p {
     font-weight: bold;
 }
 
+/* ------- Colors --------- */
+
 .orange {
     color: #dd7729;
 }
@@ -65,6 +83,18 @@ p {
 .blue {
     color: #519ABA;
     font-weight: bold;
+}
+
+.red {
+    color: #BF6C65;
+}
+
+.yellow {
+    color: #D8C059;
+}
+
+.purple {
+    color: #BB78DD; 
 }
 
 .green {
@@ -170,6 +200,15 @@ header {
 
 /* hero */
 /* https://codepen.io/geoffgraham/pen/jrWwWM */
+#particles-js {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+
 .typewriter h2 {
     color: #D8C059;
     font-family: monospace;
@@ -343,6 +382,7 @@ footer {
 .side-nav {
     display: none;
     padding: 2rem;
+    background-color: #181A1F;
 }
 
 .side-nav h5 {
@@ -353,6 +393,10 @@ footer {
     border-left: 1px solid #3b4048;
     padding-left: 1rem;
     margin-left: 1.2rem;
+}
+
+.side-nav-active p {
+    color: white;
 }
 
 .explorer-title {
@@ -418,11 +462,38 @@ hr {
     margin-top: 2rem;
 }
 
-#particles-js {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.3;
-    transition: opacity 0.5s;
+.img-overlay {
+    position: relative;
 }
+
+.middle {
+    transition: .5 ease;
+    opacity: 0;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle p {
+    color: #cacaca;
+}
+
+.img-overlay img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-overlay:hover .img-overlay-img {
+    opacity: 0.1;
+}
+
+.img-overlay:hover .middle {
+    opacity: 1;
+}
+
