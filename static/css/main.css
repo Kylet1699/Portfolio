@@ -381,7 +381,7 @@ footer {
 
 .side-nav {
     display: none;
-    padding: 2rem;
+    padding: 2rem .5rem 2rem .5rem;
     background-color: #181A1F;
 }
 
@@ -392,7 +392,7 @@ footer {
 .side-nav ul {
     border-left: 1px solid #3b4048;
     padding-left: 1rem;
-    margin-left: 1.2rem;
+    margin-left: 1rem;
 }
 
 .side-nav-active p {
@@ -411,9 +411,9 @@ footer {
     padding-bottom: 3rem;
 }
 
-@media (min-width: 61.875rem) {
+@media (min-width: 68.75rem) {
     .side-nav {
-        display:block;
+        display: block;
         grid-column: 1/2;
         position: fixed;
         height: 100%;
@@ -428,6 +428,12 @@ footer {
 
 .nav-item span {
     display: none;
+}
+
+@media (min-width: 81rem) {
+    .side-nav {
+        padding: 2rem;
+    }
 }
 
 @media (min-width: 86.25rem) {
