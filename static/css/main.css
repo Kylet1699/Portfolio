@@ -102,7 +102,7 @@ p {
     text-decoration: none;
 }
 
-.green:hover {
+.hover-link:hover {
     color: #E5C059;
     text-decoration: underline;
 }
@@ -298,11 +298,12 @@ div[class^="col-"] {
 }
 
 .side-element ul {
-    animation: 3s ease-out 0s 1 fadeIn;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
     padding: 0;
     margin: 0;
     text-align: center;
     width: 8rem;
+    margin: auto;
 }
 
 .side-element ul * {
