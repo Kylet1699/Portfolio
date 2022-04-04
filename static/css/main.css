@@ -297,7 +297,6 @@ div[class^="col-"] {
     height: fit-content;
 }
 
-
 .side-element ul {
     animation: 3s ease-out 0s 1 fadeIn;
     padding: 0;
@@ -316,8 +315,9 @@ div[class^="col-"] {
     padding: 0 0.5rem 0 0.5rem;
 }
 
-.side-element span {
+.side-element p {
     display: none;
+    position: absolute;
 }
 
 .side-icon {
@@ -346,21 +346,28 @@ div[class^="col-"] {
     
     .side-element a {
         display: block;
-        margin: 1.5rem;
+        margin: 1.5rem 0 1.5rem 0;
         width: 100%;
         text-decoration: none;
     }
     
-    .side-element span {
+    .side-element p {
         display: none;
         color: white;
         padding-left: 1rem;
-        font-size: 1.1rem;
+        padding-top: 0.4rem;
+        margin-bottom: 0;
+        font-size: 0.8rem;
     }
     
-    .side-element a:hover span {
+    .side-element a:hover p {
         display: inline;
-        animation: .3s ease-out 0s 1 slideInFromLeft;
+        animation: .3s ease-out 0s 1 fadeIn;
+        color: #519ABA;
+    }
+
+    .side-element a:hover svg {
+        color: #519ABA;
     }
 }
 
@@ -387,6 +394,10 @@ footer {
     display: none;
     padding: 2rem .5rem 2rem .5rem;
     background-color: #181A1F;
+}
+
+.side-nav-link:hover p {
+    color: white;
 }
 
 .side-nav h5 {
@@ -451,6 +462,7 @@ footer {
 
 .main-content img {
     width: 100%;
+    height: auto;
 }
 
 hr {
@@ -469,7 +481,7 @@ hr {
 }
 
 .section {
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .img-overlay {
