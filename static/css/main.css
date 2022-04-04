@@ -228,9 +228,6 @@ header {
 }
 
 @keyframes blink-caret {
-    100% {
-        boarder-color: transparent;
-    }
     50% {
         border-color: orange;
     }
