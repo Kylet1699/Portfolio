@@ -183,6 +183,10 @@ header {
     border-bottom: 1px solid #1d1f23;
 }
 
+.js-disable {
+    display: none;
+}
+
 .slideInTop {
     animation: 3s ease-out 0s 1 slideInFromTop;
 }
@@ -398,7 +402,7 @@ footer {
     color: white;
 }
 
-.side-nav h5 {
+.side-nav h4 {
     padding-bottom: 1.4rem;
 }
 

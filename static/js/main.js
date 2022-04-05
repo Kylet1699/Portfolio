@@ -116,3 +116,9 @@ window.onscroll = function() {
   }
 }
 
+const hamburger = document.querySelector(".js-disable");
+hamburger.classList.remove("js-disable");
+
+document.querySelector("collapse").classList.remove("show");
+
+

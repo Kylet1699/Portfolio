@@ -17,9 +17,13 @@ function navHighlighter() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document.querySelector(".side-nav a[href*=" + sectionId + "]").classList.add("side-nav-active");
-      console.log(document.querySelector(".side-nav a[href*=" + sectionId + "]"));
     } else {
       document.querySelector(".side-nav a[href*=" + sectionId + "]").classList.remove("side-nav-active");
     }
   });
 }
+
+const hamburger = document.querySelector(".js-disable");
+hamburger.classList.remove("js-disable");
+
+document.querySelector(".collapse").classList.remove("show");
