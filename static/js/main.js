@@ -1,124 +1,45 @@
-// ParticlesJS Config.
-particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 700
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 0.1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 10,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 2,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 140,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  });
+// Allows the navbar to function without JS
+// Disables hamburger icon and shows the navbar when JS is disabled
+document.querySelector(".js-disable").classList.remove("js-disable");
+document.querySelector(".collapse").classList.remove("show");
 
-var prevScrollpos = 400;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("particles-js").style.opacity = "0.3";
-  }
-  else {
-    document.getElementById("particles-js").style.opacity = "0";
-  }
+// Side nav highlight on scroll
+// https://codepen.io/malsu/pen/VwKzoPG
+const navSection = document.querySelectorAll(".section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+
+  // Look through sections to get height, top and ID values for each
+  navSection.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector(".side-nav a[href*=" + sectionId + "]").classList.add("side-nav-active");
+    } else {
+      document.querySelector(".side-nav a[href*=" + sectionId + "]").classList.remove("side-nav-active");
+    }
+  });
 }
 
-const hamburger = document.querySelector(".js-disable");
-hamburger.classList.remove("js-disable");
-
-document.querySelector("collapse").classList.remove("show");
+// hides particles-js when scroll past 450
+var scrollThreshold = 450;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (scrollThreshold > currentScrollPos) {
+    // document.getElementById("particles-js").style.opacity = "0.3";
+    document.getElementById("particles-js").classList.add("bg-show");
+    document.getElementById("particles-js").classList.remove("bg-hidden");
+  }
+  else {
+    document.getElementById("particles-js").classList.add("bg-hidden");
+    document.getElementById("particles-js").classList.remove("bg-show");
+  }
+}
 
 
