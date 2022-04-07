@@ -416,8 +416,11 @@ footer {
     color: white;
 }
 
-.side-nav h4 {
+.side-nav h1 {
     padding-bottom: 1.4rem;
+    color: #cacaca;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
 }
 
 .side-nav ul {
