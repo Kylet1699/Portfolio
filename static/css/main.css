@@ -10,10 +10,6 @@ body {
     background: black;
 }
 
-h1, h2, h3, h4, h5, p {
-    color: #ABB2BF;
-}
-
 h1 {
     color: #cacaca;
     font-family: 'Ubuntu', sans-serif;
@@ -188,7 +184,7 @@ header {
 }
 
 .slideInTop {
-    animation: 3s ease-out 0s 1 slideInFromTop;
+    animation: 3.5s ease-out 0s 1 slideInFromTop;
 }
 
 .navbar-toggler-icon {
@@ -220,7 +216,7 @@ header {
     opacity: 0;
 }
 
-.typewriter h2 {
+.typewriter h1 {
     color: #D8C059;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -255,23 +251,22 @@ header {
     max-width: 100%;
 }
 
-.hero h1 {
-    animation: 3s ease-out 0s 1 slideInFromTop;
+.hero-intro {
+    color: #cacaca;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-/* @media (min-width: 16rem) {
-    .hero h2 {
-        font-size: 2.525rem;
-    }
-} */
+.hero p {
+    animation: 3.3s ease-out 0s 1 slideInFromTop;
+}
 
-.hero h3 {
-    animation: 3s ease-out 0s 1 slideInFromBottom;
+.hero h2 {
+    font-size: 1.2rem;
+    font-family: 'DM Mono', monospace;
+    animation: 3.3s ease-out 0s 1 slideInFromBottom;
 }
 
 /* Projects section */
-
-
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 div[class^="col-"] {
     transition: width 0.3s, height 0.3s;
@@ -292,6 +287,10 @@ div[class^="col-"] {
 .card-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.remove-link {
+    text-decoration: none;
 }
 
 .project-card:hover {
@@ -347,7 +346,7 @@ div[class^="col-"] {
     }
     
     .side-element ul {
-        animation: 3s ease-out 0s 1 slideInFromLeft;
+        animation: 3.5s ease-out 0s 1 slideInFromLeft;
         list-style: none;
         border-color: #ABB2BF;
         position: absolute;
