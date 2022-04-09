@@ -2,6 +2,8 @@
 // Disables hamburger icon and shows the navbar when JS is disabled
 document.querySelector(".js-disable").classList.remove("js-disable");
 document.querySelector(".collapse").classList.remove("show");
+document.querySelector(".navbar-nav").classList.remove("flex-row");
+document.querySelector(".nav-link").classList.remove("js-disable-margin");
 
 // Side nav highlight on scroll
 // https://codepen.io/malsu/pen/VwKzoPG

@@ -183,6 +183,10 @@ header {
     display: none;
 }
 
+.js-disable-margin {
+    margin-right: 1rem;
+}
+
 .slideInTop {
     animation: 3.5s ease-out 0s 1 slideInFromTop;
 }
