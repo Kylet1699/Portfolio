@@ -506,6 +506,10 @@ hr {
     padding-top: 2rem;
 }
 
+.tech-img img { 
+    object-fit: contain;
+}
+
 .img-overlay {
     position: relative;
 }
