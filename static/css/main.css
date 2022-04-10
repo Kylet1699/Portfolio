@@ -551,7 +551,7 @@ hr {
 
 /* jQuery animation when element enters viewport */
 .come-in {
-    transform: translateY(200px);
+    transform: translateY(12.5rem);
     animation: come-in 1s ease forwards;
 }
 
