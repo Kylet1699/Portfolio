@@ -179,6 +179,7 @@ header {
     border-bottom: 1px solid #1d1f23;
 }
 
+/* Class used for top nav when JS is disabled */
 .js-disable {
     display: none;
 }
@@ -186,6 +187,7 @@ header {
 .js-disable-margin {
     margin-right: 1rem;
 }
+/* ---------------- */
 
 .slideInTop {
     animation: 3.5s ease-out 0s 1 slideInFromTop;
@@ -220,6 +222,7 @@ header {
     opacity: 0;
 }
 
+/* https://codepen.io/geoffgraham/pen/jrWwWM */
 .typewriter h1 {
     color: #D8C059;
     font-family: monospace;
@@ -405,6 +408,7 @@ footer {
     padding-top: 3rem;
 }
 
+/* Side nav */
 .side-nav *{
     text-decoration: none;
 }
@@ -481,7 +485,6 @@ footer {
 
 
 /* Main content format */
-
 .main-content img {
     width: 100%;
     height: auto;
@@ -510,6 +513,7 @@ hr {
     object-fit: contain;
 }
 
+/* Img overlay for individual project pages */
 .img-overlay {
     position: relative;
 }
