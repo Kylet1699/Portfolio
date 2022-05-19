@@ -59,8 +59,11 @@
                             <li class="nav-item">
                                 <a href="#process" class="side-nav-link"><p><span class="orange">&lt&gt</span> Process</p></a>
                             </li>   
+                            <!-- <li class="nav-item">
+                                <a href="#challenges" class="side-nav-link"><p><span class="orange">&lt&gt</span> Challenges</p></a>
+                            </li> -->
                             <li class="nav-item">
-                                <a href="#features" class="side-nav-link"><p><span class="orange">&lt&gt</span> Features</p></a>
+                                <a href="#features" class="side-nav-link"><p><span class="orange">&lt&gt</span> Final</p></a>
                             </li>
                             <li class="nav-item">
                                 <a href="#reflection" class="side-nav-link"><p><span class="orange">&lt&gt</span> Reflection</p></a>
@@ -74,7 +77,7 @@
                         <div class="section" id="fresh-potato">
                             <h1>Fresh Potatoes</h1>
                             <hr>
-                            <p>Full-stack development of an efficient movie searching database solution</p>
+                            <p>Full-stack development of an efficient movie searching solution</p>
                             <p>Time: <span class="purple">Jan 2021</span></p>
                             <p>Duration: <span class="blue">three months</span></p>
                             <p>Role: <span class="green">Client-side developer</span></p>
@@ -87,7 +90,7 @@
                                     <hr>
                                     <p>Developed by a team of six students to provide a simplified and more efficient movie searching process for any users that watches movies and TV shows at any age range. Fresh Potato aims to solve the problem by implementing more defined and detailed recommendation options as well as filtering the movies and shows based on the streaming platforms the users are on with the help of Django web framework and TMDB (The Movie Database) API. 
                                     </p>
-                                    <p><span class="yellow">My role </span>in the group was designing the website and making sure the client-side view is properly displaying movies from the server-side logic.
+                                    <p><span class="yellow">My role </span>in the group was mostly on the front end including website design and making sure the client-side view is properly connected with the the server-side logic through a model-view-controller.
                                     </p>
                                 </div>
                                 
@@ -144,11 +147,30 @@
                         <div class="section" id="process">
                             <h2 class="sub-title">Process</h2>
                             <hr>
-                            <p>I <span class="yellow">first</span> established the layout for the landing page as well as the style of each elements on the page. I found displaying 6 movies for each section on the landing page to be the most efficient and aesthetic. <span class="yellow">Then</span> expanded the same styles to the other pages on our website to achieve consistency. <span class="yellow">Finally</span>, I communicated with the server-side team and fetched data to be displayed on the client-side properly.</p>             
+                            <p class="mt-4"><span class="cacaca">01. Prototyping</span></p>
+                            <p>With the front-end requirements in mind, we gathered together through discord and sketched out the low-fidelity prototypes for all the pages we wanted to implement in our application. This process set a solid foundation for me to get started on designing the individual elements as well as the overall color scheme of the front-end which follows the atomic design methodology. </p>    
+                            <img src="static/img/fresh-potatoes/lfp.jpg">
+                            <p class="mt-4"><span class="cacaca">02. Improvements from LFP</span></p>
+                            <p>While working on the HFP, I discovered several issues with our LFP.</p>
+                            <ul>
+                                <li><p>Too many movies displaying on the front page causes a cluttered look which is conflicted with our minimalistic design requirement</p></li>
+                                <li><p>An expandable side navigation bar does not make a lot of sense since our navigation bar contains only 4 buttons</p></li>
+                                <li><p>Several minor layout issues which causes cluttering including the sign-up survey page and the top navigation bar</p></li>
+                            </ul>
+                            <div class="row gy-4">
+                                <div class="col-xs-12 col-xl-6">
+                                    <img src="static/img/fresh-potatoes/lfp-issue-1.jpg">
+                                </div>
+                                <div class="col-xs-12 col-xl-6">
+                                    <img src="static/img/fresh-potatoes/lfp-issue-2.jpg">
+                                </div>
+                            </div>
+                            <p class="mt-4"><span class="cacaca">03. Development</span></p>
+                            <p>Everything was smooth up until this point when I started coding and developing the front-end. I had no clue how html and css worked and neither did my teammates. My development work was delayed for 2 weeks but I eventually learned the basics of html and css by digging through the web. Once I finished majority of the work, I passed the server-side data to the front-end which allowed movie infos from the API to be displayed correctly on the client-side.</p>
                         </div>
                         <!-- Features -->
                         <div class="section" id="features">
-                            <h2 class="sub-title">Features</h2>
+                            <h2 class="sub-title">Final Product</h2>
                             <hr>
                             <!-- Feature 1 -->
                             <div class="section">
@@ -224,6 +246,7 @@
                             <p>The biggest challenge we encountered as a group was being unfamiliar with the technical tools for this project. Being me and my group's first time building a full-stack project, we were lost at the beginning as it was our first time using model-view-controller framework as well as client side languages of html and css. 
                             </p>
                             <p>A big takeaway from this project for me was how to utilize online resources effectively and efficiently. Though the start was rough and our development was delayed by almost 2 weeks. I learned the basics of html and css as a client-side developer, as well as being a better team-player by communicating with the server-side team to ensure the front-end displayed data correctly.</p>
+                            <p>Being the main project of a lower division software engineering course, this project provided me with an overview of various techniques used for software development and software project management, including requirements, analysis, documentation, design, implementation, testing, and maintenance.</p>
                         </div>
                     </div>      
                 </div>

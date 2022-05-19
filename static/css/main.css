@@ -98,6 +98,10 @@ p {
     text-decoration: none;
 }
 
+.cacaca {
+    color: #cacaca;
+}
+
 .hover-link:hover {
     color: #E5C059;
     text-decoration: underline;
@@ -507,6 +511,11 @@ hr {
 
 .section {
     padding-top: 2rem;
+}
+
+.section ul { 
+    list-style-type: disc;
+    color: #8a8a8a;
 }
 
 .tech-img img { 
