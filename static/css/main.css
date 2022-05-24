@@ -421,6 +421,7 @@ footer {
     display: none;
     padding: 2rem .5rem 2rem .5rem;
     background-color: #181A1F;
+    /* background-color: #121212; */
 }
 
 .side-nav-link:hover p {
@@ -518,6 +519,10 @@ hr {
     color: #8a8a8a;
 }
 
+.tech-img {
+    max-width: 7rem;
+}
+
 .tech-img img { 
     object-fit: contain;
 }
@@ -575,4 +580,45 @@ to { transform: translateY(0); }
 .already-visible {
 transform: translateY(0);
 animation: none;
+}
+
+/* ========== PATHFINDING ============= */
+
+pre {
+    background-color: #1d1f23;
+    border-radius: 15px;
+    width: min-content;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+pre code {
+    color: white;
+    width: min-content;
+    padding: 0;
+    margin: auto;
+    display: block;
+    line-height: 1.6rem;
+
+}
+
+.formula {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.video-container {
+    overflow: hidden;
+    display: block;
+    width: 70rem;
+    height: 30rem;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+video {
+    position: absolute;
+    top: -120%;
+    left: -104%;
 }
