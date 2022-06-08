@@ -63,6 +63,9 @@
                             <li class="nav-item">
                                 <a href="#results" class="side-nav-link"><p><span class="orange">&lt&gt</span> Results</p></a>
                             </li>
+                            <li class="nav-item">
+                                <a href="#next-step" class="side-nav-link"><p><span class="orange">&lt&gt</span> Next Step</p></a>
+                            </li>
                         </ul>
                     </nav>
                 </aside>
@@ -237,7 +240,14 @@ void Update() {
                             <div class="section" id="results">
                                 <h2 class="sub-title">Results</h2>
                                 <hr>
-
+                                <p><span class="green">Waypoint algorithm </span>has the highest average time with half of the runs being very inconsistent due to the nature of the algorithmm where the agents only travel in a straight line towards the next waypoint and are unable to detect and navigate around the obstacles. This method becomes extremely inefficient in a complicated environment because of the amount of work required to manually set up the waypoints.</p>
+                                <p><span class="green">A* algorithm </span>achieved great results suprisingly. The results are consistent and very efficient. Though the agents are able to navigate through the environment automatically, the downside of this method is that it requires a lot of manual coding and conditions to handle different forms of obstacles. It would work very well in a medium complexity and sized world, and certainly would not be the best option in a more complex and bigger environment.</p>
+                                <p>The <span class="green">NavMesh algorithm </span>works the best of the three algorithms tested. It is an abstract data structure used in artificial intelligence applications to aid agents in pathfindng through complicated spaces. Using one of the already implemented Unity features, less coding and better results are achieved compared to the other methods. With most of the work handled by Unity, more features and possibilities are opened up for both the environment and the agents.</p>
+                            </div>
+                            <div class="section" id="next-step">
+                                <h2 class="sub-title">Next Step</h2>
+                                <hr>
+                                <p>There are endless possibilities to improve the pathfinding algorithms implemented for this research. If I had more time and resources, I would like to create a more complex environment to see how different algorithms would interact with it. Additionally, different speed modifiers and terrain costs for the environment are also on top of the to-do list, along with giving special abilities to the agents like walking on the wall, teleport, or fly with a cool down timer.</p>
                             </div>
                         </div>
                     </div>      
